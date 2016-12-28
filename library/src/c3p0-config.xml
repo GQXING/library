@@ -1,0 +1,23 @@
+<c3p0-config>
+  <default-config>
+    <property name="jdbcUrl">jdbc:sqlserver://localhost:1433;DataBaseName=数据库课设</property> 
+    <property name="driverClass">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+    <property name="user">sa</property>
+    <property name="password">123456</property>
+    <property name="maxIdleTime">3000</property>
+    <property name="maxPoolSize">6</property>
+    <property name="initialPoolSize">3</property>
+  </default-config>
+
+
+  <named-config name="mysqlConfig">
+    <property name="jdbcUrl">jdbc:mysql://localhost:3306/jdbc_demo
+		</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="user">root</property>
+		<property name="password">root</property>
+		<property name="initialPoolSize">3</property>
+		<property name="maxPoolSize">6</property>
+		<property name="maxIdleTime">1000</property>
+   </named-config>
+</c3p0-config>

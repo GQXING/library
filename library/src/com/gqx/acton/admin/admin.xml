@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<!-- START SNIPPET: xworkSample -->
+<struts>
+	<package name="adminAction"   extends="struts-default" namespace="/">
+		<action name="admin_*" class="com.gqx.acton.admin.AdminAction"  method="{1}">
+			 <result name="oks" type="dispatcher">/admin.jsp</result>
+		</action>
+	</package>
+	
+</struts>
+
+<!-- END SNIPPET: xworkSample -->
+
